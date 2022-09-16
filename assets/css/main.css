@@ -50,3 +50,19 @@ p{
   /* font-size: 24px; */
   line-height: 30px;
 }
+
+section.featured{
+  background-image: url('/assets/images/bg-ornamen.png');
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+section.featured .rounded-3xl{
+  box-shadow: 0px 64px 64px rgba(67, 183, 193, 0.3);
+}
+.box-map{
+  box-shadow: 0px 64px 64px rgba(238, 165, 97, 0.1);
+}
+.box-wallet{
+  background: linear-gradient(117.18deg, #000000 -27.22%, #222222 121.89%);
+  border-radius: 70px;
+}
