@@ -16,6 +16,7 @@ module.exports = {
           600 : '#2A7D23',
           700 : '#FFD873',
           800 : '#FFA800',
+          900 : '#BD7D07'
         },
         trendeCol:{
           100 : '#C6C6C6',
