@@ -1390,8 +1390,16 @@ section.featured .rounded-3xl{
 }
 
 .box-wallet{
-  background: linear-gradient(117.18deg, #000000 -27.22%, #222222 121.89%);
+  /* background: linear-gradient(117.18deg, #000000 -27.22%, #222222 121.89%); */
+  background: url('/assets/images/bg-light-orn.png');
+  background-size: cover;
   border-radius: 70px;
+}
+
+.box-light{
+  background: url('/assets/images/bg-light-orn.png');
+  background-position: center;
+  background-size: cover;
 }
 
 .hover\:bg-gray-100:hover {
