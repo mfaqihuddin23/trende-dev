@@ -11,38 +11,46 @@
     background-image: url('/assets/images/bg-pattern.png');
   }
   .container{
+    width: 90% !important;
     max-width: 1155px !important;
   }
   
   /* typography  */
   h1{
-    font-size: 64px;
+    /* font-size: 64px; */
+    font-size: 32px;
     line-height: 110%;
   }
   h2{
-    font-size: 52px;
+    /* font-size: 52px; */
+    font-size: 32px;
     line-height: 110%;
   }
   h3{
-    font-size: 48px;
+    /* font-size: 48px; */
+    font-size: 34px;
     line-height: 110%;
   }
   h4{
-    font-size: 36px;
+    /* font-size: 36px; */
+    font-size: 24px;
     line-height: 110%;
   }
   h5{
-    font-size: 32px;
+    /* font-size: 32px; */
+    font-size: 24px;
     line-height: 110%;
   }
   
   p{
-    font-size: 24px;
+    /* font-size: 24px; */
+    font-size: 14px;
     line-height: 150%;
   }
   
   .body-1{
     /* font-size: 24px; */
+    font-size: 16px;
     line-height: 110%;
   }
   .body-2{
@@ -75,3 +83,35 @@
   }
 }
 
+@media (min-width: 640px) {  }
+@media (min-width: 768px) {  }
+@media (min-width: 1024px) {
+  h1{
+    font-size: 64px;
+  }
+  h2{
+    font-size: 52px;
+  }
+  h3{
+    font-size: 48px;
+  }
+  h4{
+    font-size: 36px;
+  }
+  h5{
+    font-size: 32px;
+  }
+  
+  p{
+    font-size: 24px;
+  }
+
+  .body-1{
+    font-size: 24px;
+  }
+  .body-2{
+    font-size: 24px;
+  }
+}
+@media (min-width: 1280px) {  }
+@media (min-width: 1536px) {  }

@@ -13,11 +13,11 @@
 <body>
   <nav class="py-9">
     <div class="container flex flex-wrap justify-between items-center mx-auto">
-      <div class="flex flex-col">
-        <a href="#" class="flex items-center mb-3">
-          <img src="/assets/images/logo-trende.png" alt="">
+      <div class="flex flex-col items-center">
+        <a href="#" class="flex items-center md:mb-3">
+          <img src="/assets/images/logo-trende.png" alt="" class="max-h-6 md:max-h-full">
         </a>
-        <ul class="flex flex-row mt-0 mr-6 space-x-8 text-sm font-medium">
+        <ul class="hidden md:flex flex-row mt-0 mr-6 space-x-8 text-sm font-medium">
           <li>
             <a href="#">
               <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -54,21 +54,69 @@
       </div>
       <div class="flex md:order-2">
         <a href="#">
-          <button class="bg-gradient-to-r from-trendeGrade-100 to-trendeGrade-200 text-white py-2 px-6">
+          <button class="hidden md:inline-block bg-gradient-to-r from-trendeGrade-100 to-trendeGrade-200 text-white py-2 px-6">
             Create Wallet
           </button>
         </a>
-        <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+        <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden " aria-controls="navbar-sticky" aria-expanded="false">
           <span class="sr-only">Open main menu</span>
-          <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+          <!-- <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg> -->
+          <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="1" y1="9" x2="18" y2="9" stroke="#FF9C00" stroke-width="2" stroke-linecap="round"/>
+            <line x1="8" y1="1" x2="18" y2="1" stroke="#FF9C00" stroke-width="2" stroke-linecap="round"/>
+            <line x1="8" y1="17" x2="18" y2="17" stroke="#FF9C00" stroke-width="2" stroke-linecap="round"/>
+          </svg>
         </button>
+      </div>
+      <div class="hidden mt-8 w-full" id="navbar-sticky">
+        <div class="flex flex-col items-center">
+          <ul class="flex flex-row mt-0 mr-6 space-x-8 text-sm font-medium">
+            <li>
+              <a href="#">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.1" fill-rule="evenodd" clip-rule="evenodd" d="M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16Z" fill="white"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M22.6677 10.4996C23.4021 10.7011 23.9804 11.2948 24.1767 12.0488C24.5333 13.4154 24.5333 16.2667 24.5333 16.2667C24.5333 16.2667 24.5333 19.1179 24.1767 20.4845C23.9804 21.2386 23.4021 21.8323 22.6677 22.0339C21.3369 22.4 16 22.4 16 22.4C16 22.4 10.6631 22.4 9.33218 22.0339C8.59783 21.8323 8.0195 21.2386 7.82323 20.4845C7.46667 19.1179 7.46667 16.2667 7.46667 16.2667C7.46667 16.2667 7.46667 13.4154 7.82323 12.0488C8.0195 11.2948 8.59783 10.7011 9.33218 10.4996C10.6631 10.1334 16 10.1334 16 10.1334C16 10.1334 21.3369 10.1334 22.6677 10.4996ZM14.4 13.8666V19.2L18.6667 16.5334L14.4 13.8666Z" fill="white"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.1" fill-rule="evenodd" clip-rule="evenodd" d="M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16Z" fill="white"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M15.5208 13.005L15.5544 13.5586L14.9948 13.4909C12.9579 13.231 11.1784 12.3497 9.66756 10.8696L8.92891 10.1351L8.73865 10.6775C8.33575 11.8864 8.59316 13.1632 9.43253 14.0219C9.8802 14.4964 9.77948 14.5642 9.00725 14.2818C8.73865 14.1914 8.50363 14.1236 8.48124 14.1575C8.4029 14.2366 8.6715 15.2647 8.88414 15.6715C9.17513 16.2364 9.76828 16.7901 10.4174 17.1177L10.9658 17.3776L10.3167 17.3889C9.68994 17.3889 9.66756 17.4002 9.73471 17.6375C9.95854 18.3719 10.8427 19.1515 11.8276 19.4905L12.5214 19.7277L11.9171 20.0893C11.0218 20.609 9.96973 20.9028 8.91772 20.9254C8.41409 20.9367 8 20.9819 8 21.0158C8 21.1288 9.36538 21.7615 10.16 22.0101C12.5438 22.7445 15.3753 22.4281 17.5017 21.174C19.0126 20.2814 20.5235 18.5075 21.2286 16.7901C21.6091 15.8749 21.9896 14.2027 21.9896 13.4005C21.9896 12.8807 22.0232 12.8129 22.6499 12.1915C23.0192 11.8299 23.3662 11.4345 23.4333 11.3215C23.5452 11.1068 23.534 11.1068 22.9633 11.2989C22.012 11.6379 21.8777 11.5927 22.3477 11.0842C22.6947 10.7227 23.1088 10.0673 23.1088 9.87527C23.1088 9.84137 22.9409 9.89787 22.7506 9.99955C22.5492 10.1125 22.1015 10.282 21.7658 10.3837L21.1614 10.5758L20.613 10.2029C20.3108 9.99955 19.8856 9.77358 19.6617 9.70579C19.0909 9.54761 18.218 9.5702 17.7032 9.75098C16.3042 10.2594 15.4201 11.5701 15.5208 13.005Z" fill="white"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.1" fill-rule="evenodd" clip-rule="evenodd" d="M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16Z" fill="white"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M16.0008 7.46667C13.6833 7.46667 13.3924 7.47681 12.4822 7.51823C11.5737 7.55983 10.9536 7.70366 10.4111 7.91468C9.84981 8.13264 9.37372 8.4242 8.8994 8.89869C8.42473 9.37301 8.13317 9.8491 7.9145 10.4102C7.70294 10.9529 7.55894 11.5732 7.51805 12.4813C7.47734 13.3915 7.46667 13.6826 7.46667 16.0001C7.46667 18.3176 7.47699 18.6076 7.51823 19.5178C7.56001 20.4263 7.70383 21.0464 7.91468 21.589C8.13282 22.1502 8.42437 22.6263 8.89887 23.1006C9.37301 23.5753 9.8491 23.8676 10.41 24.0855C10.9529 24.2965 11.5732 24.4404 12.4815 24.482C13.3917 24.5234 13.6824 24.5335 15.9997 24.5335C18.3175 24.5335 18.6074 24.5234 19.5176 24.482C20.4261 24.4404 21.0469 24.2965 21.5898 24.0855C22.1509 23.8676 22.6263 23.5753 23.1004 23.1006C23.5751 22.6263 23.8667 22.1502 24.0853 21.5891C24.2951 21.0464 24.4391 20.4261 24.4818 19.518C24.5227 18.6078 24.5333 18.3176 24.5333 16.0001C24.5333 13.6826 24.5227 13.3917 24.4818 12.4815C24.4391 11.573 24.2951 10.9529 24.0853 10.4103C23.8667 9.8491 23.5751 9.37301 23.1004 8.89869C22.6258 8.42402 22.1511 8.13246 21.5893 7.91468C21.0453 7.70366 20.4249 7.55983 19.5164 7.51823C18.6062 7.47681 18.3164 7.46667 15.9981 7.46667H16.0008ZM15.2353 9.00444C15.4625 9.00409 15.716 9.00444 16.0008 9.00444C18.2792 9.00444 18.5492 9.01262 19.449 9.05351C20.281 9.09156 20.7326 9.23058 21.0334 9.34738C21.4316 9.50205 21.7155 9.68694 22.014 9.98561C22.3127 10.2843 22.4976 10.5687 22.6526 10.967C22.7694 11.2674 22.9086 11.719 22.9464 12.551C22.9873 13.4505 22.9962 13.7208 22.9962 15.9981C22.9962 18.2755 22.9873 18.5457 22.9464 19.4453C22.9084 20.2773 22.7694 20.7288 22.6526 21.0293C22.4979 21.4275 22.3127 21.7111 22.014 22.0096C21.7153 22.3082 21.4318 22.4931 21.0334 22.6478C20.7329 22.7651 20.281 22.9038 19.449 22.9418C18.5494 22.9827 18.2792 22.9916 16.0008 22.9916C13.7222 22.9916 13.4521 22.9827 12.5526 22.9418C11.7205 22.9034 11.269 22.7644 10.968 22.6476C10.5698 22.4929 10.2853 22.3081 9.98666 22.0094C9.68799 21.7107 9.5031 21.427 9.34808 21.0286C9.23128 20.7281 9.09208 20.2766 9.05421 19.4446C9.01332 18.545 9.00514 18.2748 9.00514 15.996C9.00514 13.7172 9.01332 13.4484 9.05421 12.5488C9.09226 11.7168 9.23128 11.2653 9.34808 10.9645C9.50275 10.5662 9.68799 10.2818 9.98666 9.98312C10.2853 9.68445 10.5698 9.49956 10.968 9.34454C11.2688 9.2272 11.7205 9.08853 12.5526 9.05031C13.3398 9.01476 13.6448 9.00409 15.2353 9.00231V9.00444ZM20.5558 10.4214C19.9905 10.4214 19.5318 10.8795 19.5318 11.445C19.5318 12.0103 19.9905 12.469 20.5558 12.469C21.1212 12.469 21.5799 12.0103 21.5799 11.445C21.5799 10.8797 21.1212 10.4214 20.5558 10.4214ZM16.0008 11.6178C13.5807 11.6178 11.6186 13.58 11.6186 16.0001C11.6186 18.4202 13.5807 20.3815 16.0008 20.3815C18.4209 20.3815 20.3824 18.4202 20.3824 16.0001C20.3824 13.58 18.4209 11.6178 16.0008 11.6178ZM16.0008 13.1556C17.5717 13.1556 18.8453 14.429 18.8453 16.0001C18.8453 17.5709 17.5717 18.8445 16.0008 18.8445C14.4298 18.8445 13.1563 17.5709 13.1563 16.0001C13.1563 14.429 14.4298 13.1556 16.0008 13.1556Z" fill="white"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.1" fill-rule="evenodd" clip-rule="evenodd" d="M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16Z" fill="white"/>
+                  <path d="M22.9866 10.2088C23.1112 9.40332 22.3454 8.76755 21.6292 9.082L7.36482 15.3448C6.85123 15.5703 6.8888 16.3483 7.42147 16.5179L10.3631 17.4547C10.9246 17.6335 11.5325 17.541 12.0228 17.2023L18.655 12.6203C18.855 12.4821 19.073 12.7665 18.9021 12.9426L14.1281 17.8646C13.665 18.3421 13.7569 19.1512 14.314 19.5005L19.659 22.8523C20.2585 23.2282 21.0297 22.8506 21.1418 22.1261L22.9866 10.2088Z" fill="white"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <a href="#" class="mt-8">
+            <button class="bg-gradient-to-r from-trendeGrade-100 to-trendeGrade-200 text-white py-2 px-6">
+              Create Wallet
+            </button>
+          </a>
+        </div>
       </div>
     </div>
   </nav>
-  <section class="hero pb-28">
+  <section class="hero pb-20 mb:pb-28">
     <div class="container">
-      <div class="flex">
-        <div class="flex flex-col justify-center w-7/12">
+      <div class="flex flex-col md:flex-row">
+        <div class="flex flex-col justify-center md:w-7/12 mb-8 md:mb-0">
           <h1 class="font-normal text-white mb-6">
             Meet TCX <br>
             The Community Coin 
@@ -77,12 +125,12 @@
             A Cryptocurrency Platform that promotes the community while being driven by the community
           </p>
           <a href="#">
-            <button class="bg-gradient-to-r from-trendeCol-600 to-trendeGrade-900 text-white text-lg py-2 px-6">
+            <button class="bg-gradient-to-r from-trendeCol-600 to-trendeGrade-900 text-white text-sm md:text-lg py-2 px-6">
               Read Whitepaper
             </button>
           </a>
         </div>
-        <div class="flex w-5/12 justify-end">
+        <div class="flex md:w-5/12 justify-end">
           <video width="auto" height="auto" autoplay loop muted>
             <source src="/assets/animations/TRDE_CLR_TXT_Ani_3_0001-0120.webm" type="video/webm">
             <!-- <source src="movie.ogg" type="video/ogg"> -->
@@ -93,7 +141,7 @@
     </div>
   </section>
   <section class="featured bg-trendeCol-200">
-    <div class="container py-36">
+    <div class="container py-16 md:py-36">
       <div class="flex justify-center">
         <!-- comment the image placeholder before putting your video  -->
         <img src="/assets/images/img-video-placeholder.png" alt="placeholder">
@@ -105,8 +153,8 @@
       </div>
     </div>
     <div class="container">
-      <div class="flex justify-center">
-        <div class="rounded-3xl bg-gradient-to-b from-trendeGrade-300 to-trendeGrade-400 flex flex-col justify-between p-9 mr-4">
+      <div class="flex justify-center flex-col md:flex-row">
+        <div class="rounded-3xl bg-gradient-to-b from-trendeGrade-300 to-trendeGrade-400 flex flex-col justify-between p-9 mb-5 md:mb-0 md:mr-4">
           <h4 class="font-normal text-white mb-4">
             Trende Coin $TCX
           </h4>
@@ -124,12 +172,12 @@
             Trende is currently listed on Alcor Exchange
           </p>
           <a href="#">
-            <button class="rounded-xl bg-white text-lg text-trendeCol-300 py-2 px-6">
+            <button class="bg-white text-xs md:text-lg text-trendeCol-300 py-2 px-6">
               Buy Now
             </button>
           </a>
         </div>
-        <div class="rounded-3xl bg-gradient-to-b from-trendeGrade-500 to-trendeGrade-600 flex flex-col justify-between items-center py-9 px-4 ml-4">
+        <div class="rounded-3xl bg-gradient-to-b from-trendeGrade-500 to-trendeGrade-600 flex flex-col justify-between items-center py-9 px-4 md:ml-4">
           <div class="flex justify-center mb-2">
             <svg width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M26.5 5.1547C27.7376 4.44017 29.2624 4.44017 30.5 5.1547L47.2846 14.8453C48.5222 15.5598 49.2846 16.8803 49.2846 18.3094V37.6906C49.2846 39.1197 48.5222 40.4402 47.2846 41.1547L30.5 50.8453C29.2624 51.5598 27.7376 51.5598 26.5 50.8453L9.71539 41.1547C8.47779 40.4402 7.71539 39.1197 7.71539 37.6906V18.3094C7.71539 16.8803 8.47779 15.5598 9.71539 14.8453L26.5 5.1547Z" fill="white"/>
@@ -155,15 +203,15 @@
             Unlock Discounts to Trende Ecosystem
           </h5>
           <a href="#">
-            <button class="rounded-xl bg-white text-lg text-trendeCol-300 py-2 px-6">
+            <button class="bg-white text-xs md:text-lg text-trendeCol-300 py-2 px-6">
               Learn more
             </button>
           </a>
         </div>
       </div>
     </div>
-    <div class="container py-36">
-      <h1 class="font-normal text-trendeCol-500 text-center mb-12">
+    <div class="container py-20 md:py-36">
+      <h1 class="font-normal text-trendeCol-500 text-center mb-7 md:mb-12">
         Featured Partners
       </h1>
       <h3 class="font-normal text-trendeCol-500 text-center">
@@ -171,17 +219,17 @@
       </h3>
     </div>
   </section>
-  <section class="roadmap py-24">
-    <div class="container mb-28">
+  <section class="roadmap py-14 md:py-24">
+    <div class="container mb-24 md:mb-28">
       <div class="flex flex-col items-center">
-        <h1 class="font-normal text-white text-center mb-2">
+        <h1 class="font-normal text-white text-center mb-7 md:mb-2">
           Our Roadmap
         </h1>
-        <p class="font-normal text-white mb-12">
+        <p class="font-normal text-white mb-7 md:mb-12">
           Q3/Q4 2022
         </p>
-        <div class="box-map rounded-3xl bg-gradient-to-b from-trendeGrade-700 to-trendeGrade-800 p-9 w-8/12">
-          <ul class="list-disc font-normal text-2xl text-black body-2 space-y-3">
+        <div class="box-map rounded-3xl bg-gradient-to-b from-trendeGrade-700 to-trendeGrade-800 p-9 md:w-8/12">
+          <ul class="list-disc font-normal text-lg md:text-2xl text-black body-2 space-y-6">
             <li>
               Launch Trende.io website
             </li>
@@ -205,27 +253,28 @@
       </div>
     </div>
     <div class="container relative">
-      <h1 class="font-normal text-white text-center mb-32">
+      <h1 class="font-normal text-white text-center mb-52 md:mb-32">
         Trende Wallet
       </h1>
       
-      <div class="box-wallet relative">
-        <div class="flex justify-between p-24">
+      <div class="box-wallet py-20 md:p-24">
+        <div class="absolute top-0 md:-bottom-16 md:-left-16 md:w-7/12">
+          <video width="auto" height="auto" autoplay loop muted>
+            <source src="/assets/animations/WLT_03_0001-0120 (2).webm" type="video/webm">
+            <!-- <source src="movie.ogg" type="video/ogg"> -->
+          Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="flex flex-col md:flex-row justify-center md:justify-between">
           <div class="flex">
-            <div class="absolute -bottom-24 -left-24 w-7/12">
-              <video width="auto" height="auto" autoplay loop muted>
-                <source src="/assets/animations/WLT_03_0001-0120 (2).webm" type="video/webm">
-                <!-- <source src="movie.ogg" type="video/ogg"> -->
-              Your browser does not support the video tag.
-              </video>
-            </div>
+            
           </div>
-          <div class="w-6/12 flex flex-col items-center">
+          <div class="md:w-6/12 flex flex-col items-center">
             <h2 class="font-normal text-white mb-7">
               Coming Soon
             </h2>
             <a href="#">
-              <button class="bg-trendeCol-600 text-white text-lg py-2 px-6">
+              <button class="bg-trendeCol-600 text-white text-sm md:text-lg py-2 px-6">
                 Learn More
               </button>
             </a>
@@ -237,7 +286,7 @@
   </section>
   <section class="trademarks bg-trendeCol-700 py-6">
     <div class="container">
-      <div class="font-Inter font-normal text-trendeCol-800 text-center">
+      <div class="font-Inter font-normal text-sm text-trendeCol-800 text-center">
         © 2020 Trende. All rights reserved
       </div>
     </div>
