@@ -1076,6 +1076,11 @@ section.featured .rounded-3xl{
   margin-bottom: 1.5rem;
 }
 
+.my-2{
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
 .mt-0{
   margin-top: 0px;
 }
@@ -1126,6 +1131,10 @@ section.featured .rounded-3xl{
 
 .mb-52{
   margin-bottom: 13rem;
+}
+
+.mt-6{
+  margin-top: 1.5rem;
 }
 
 .flex{
@@ -1369,12 +1378,25 @@ section.featured .rounded-3xl{
   line-height: 1.75rem;
 }
 
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .font-medium{
   font-weight: 500;
 }
 
 .font-normal{
   font-weight: 400;
+}
+
+.font-bold{
+  font-weight: 700;
+}
+
+.font-semibold{
+  font-weight: 600;
 }
 
 .text-white{
@@ -1554,6 +1576,10 @@ section.featured .rounded-3xl{
 
   .md\:flex-row{
     flex-direction: row;
+  }
+
+  .md\:justify-end{
+    justify-content: flex-end;
   }
 
   .md\:justify-between{
