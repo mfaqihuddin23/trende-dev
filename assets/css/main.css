@@ -58,6 +58,13 @@
     line-height: 30px;
   }
   
+  section.hero p{
+    max-width: 532px;
+  }
+  section.hero .lottie-loop{
+    max-width: 470px;
+  }
+
   section.featured{
     background-image: url('/assets/images/bg-ornamen.png');
     background-position: center top;
@@ -80,6 +87,9 @@
     background: url('/assets/images/bg-light-orn.png');
     background-position: center;
     background-size: cover;
+  }
+  .box-wallet .lottie-loop{
+    max-width: 500px;
   }
 }
 

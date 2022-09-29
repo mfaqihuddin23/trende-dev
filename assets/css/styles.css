@@ -815,6 +815,14 @@ p{
   line-height: 30px;
 }
 
+section.hero p{
+  max-width: 532px;
+}
+
+section.hero .lottie-loop{
+  max-width: 470px;
+}
+
 section.featured{
   background-image: url('/assets/images/bg-ornamen.png');
   background-position: center top;
@@ -835,6 +843,10 @@ section.featured .rounded-3xl{
   background: url('/assets/images/bg-light-orn.png');
   background-size: cover;
   border-radius: 70px;
+}
+
+.box-wallet .lottie-loop{
+  max-width: 500px;
 }
 
 *, ::before, ::after{
@@ -1036,10 +1048,6 @@ section.featured .rounded-3xl{
 
 .bottom-0{
   bottom: 0px;
-}
-
-.top-0{
-  top: 0px;
 }
 
 .z-0{
@@ -1449,12 +1457,12 @@ section.featured .rounded-3xl{
 }
 
 @media (min-width: 768px){
-  .md\:-bottom-16{
-    bottom: -4rem;
+  .md\:-bottom-10{
+    bottom: -2.5rem;
   }
 
-  .md\:-left-16{
-    left: -4rem;
+  .md\:-left-10{
+    left: -2.5rem;
   }
 
   .md\:order-2{
@@ -1513,8 +1521,8 @@ section.featured .rounded-3xl{
     width: 58.333333%;
   }
 
-  .md\:w-5\/12{
-    width: 41.666667%;
+  .md\:w-4\/12{
+    width: 33.333333%;
   }
 
   .md\:w-8\/12{
