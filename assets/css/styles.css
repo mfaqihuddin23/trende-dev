@@ -846,7 +846,10 @@ section.featured .rounded-3xl{
 }
 
 .box-wallet .lottie-loop{
-  max-width: 500px;
+  max-width: 240px;
+}
+
+.box-wallet .absolute{
 }
 
 *, ::before, ::after{
@@ -1050,6 +1053,14 @@ section.featured .rounded-3xl{
   bottom: 0px;
 }
 
+.bottom-44{
+  bottom: 11rem;
+}
+
+.bottom-48{
+  bottom: 12rem;
+}
+
 .z-0{
   z-index: 0;
 }
@@ -1191,6 +1202,10 @@ section.featured .rounded-3xl{
   --tw-space-y-reverse: 0;
   margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+}
+
+.overflow-hidden{
+  overflow: hidden;
 }
 
 .rounded-lg{
@@ -1448,6 +1463,10 @@ section.featured .rounded-3xl{
   .body-2{
     font-size: 24px;
   }
+
+  .box-wallet .lottie-loop{
+    max-width: 500px;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -1499,6 +1518,10 @@ section.featured .rounded-3xl{
 
   .md\:mb-32{
     margin-bottom: 8rem;
+  }
+
+  .md\:block{
+    display: block;
   }
 
   .md\:inline-block{

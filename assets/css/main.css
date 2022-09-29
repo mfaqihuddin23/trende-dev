@@ -89,7 +89,10 @@
     background-size: cover;
   }
   .box-wallet .lottie-loop{
-    max-width: 500px;
+    max-width: 240px;
+  }
+  .box-wallet .absolute{
+    
   }
 }
 
@@ -121,6 +124,9 @@
   }
   .body-2{
     font-size: 24px;
+  }
+  .box-wallet .lottie-loop{
+    max-width: 500px;
   }
 }
 @media (min-width: 1280px) {  }
