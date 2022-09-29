@@ -1066,6 +1066,11 @@ section.featured .rounded-3xl{
   margin-right: auto;
 }
 
+.my-2{
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
 .my-10{
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
@@ -1074,11 +1079,6 @@ section.featured .rounded-3xl{
 .my-6{
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
-}
-
-.my-2{
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
 }
 
 .mt-0{
@@ -1133,10 +1133,6 @@ section.featured .rounded-3xl{
   margin-bottom: 13rem;
 }
 
-.mt-6{
-  margin-top: 1.5rem;
-}
-
 .flex{
   display: flex;
 }
@@ -1183,10 +1179,6 @@ section.featured .rounded-3xl{
 
 .items-center{
   align-items: center;
-}
-
-.justify-end{
-  justify-content: flex-end;
 }
 
 .justify-center{
@@ -1373,14 +1365,14 @@ section.featured .rounded-3xl{
   line-height: 1rem;
 }
 
-.text-lg{
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
 .text-3xl{
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .font-medium{
@@ -1389,10 +1381,6 @@ section.featured .rounded-3xl{
 
 .font-normal{
   font-weight: 400;
-}
-
-.font-bold{
-  font-weight: 700;
 }
 
 .font-semibold{
