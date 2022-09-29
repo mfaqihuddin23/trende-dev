@@ -820,7 +820,7 @@ section.hero p{
 }
 
 section.hero .lottie-loop{
-  max-width: 470px;
+  max-width: 334px;
 }
 
 section.featured{
@@ -1470,6 +1470,10 @@ section.featured .rounded-3xl{
     font-size: 24px;
   }
 
+  section.hero .lottie-loop{
+    max-width: 470px;
+  }
+
   .box-wallet .lottie-loop{
     max-width: 500px;
   }
@@ -1566,6 +1570,10 @@ section.featured .rounded-3xl{
     flex-direction: row;
   }
 
+  .md\:items-start{
+    align-items: flex-start;
+  }
+
   .md\:justify-end{
     justify-content: flex-end;
   }
@@ -1586,6 +1594,10 @@ section.featured .rounded-3xl{
   .md\:py-24{
     padding-top: 6rem;
     padding-bottom: 6rem;
+  }
+
+  .md\:text-left{
+    text-align: left;
   }
 
   .md\:text-lg{

@@ -62,7 +62,7 @@
     max-width: 532px;
   }
   section.hero .lottie-loop{
-    max-width: 470px;
+    max-width: 334px;
   }
 
   section.featured{
@@ -124,6 +124,10 @@
   }
   .body-2{
     font-size: 24px;
+  }
+
+  section.hero .lottie-loop{
+    max-width: 470px;
   }
   .box-wallet .lottie-loop{
     max-width: 500px;
