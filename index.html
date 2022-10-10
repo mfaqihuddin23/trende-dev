@@ -55,10 +55,39 @@
       </div>
       <div class="flex md:order-2">
         <a href="#">
-          <button class="hidden md:inline-block bg-gradient-to-r from-trendeGrade-100 to-trendeGrade-200 text-white py-2 px-6">
+          <button class="hidden md:inline-block bg-gradient-to-r from-trendeGrade-100 to-trendeGrade-200 text-white py-2 px-6" type="button" data-modal-toggle="popup-modal">
             Create Wallet
           </button>
         </a>
+        <div id="popup-modal" tabindex="-1" class="p-modal hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 md:inset-0 h-full">
+          <div class="relative flex justify-center items-center w-full max-w-md h-full">
+              <div class="relative bg-trendeCol-500 rounded-3xl w-11/12">
+                  <button type="button" class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-800 dark:hover:text-white" data-modal-toggle="popup-modal">
+                    <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M33.75 13.2187L31.7812 11.25L22.5 20.5313L13.2187 11.25L11.25 13.2187L20.5313 22.5L11.25 31.7812L13.2187 33.75L22.5 24.4687L31.7812 33.75L33.75 31.7812L24.4687 22.5L33.75 13.2187Z" fill="#FF9C00"/>
+                    </svg>
+                    <span class="sr-only">Close modal</span>
+                  </button>
+                  <div class="p-6">
+                    <!-- <svg aria-hidden="true" class="mx-auto mb-4 w-14 h-14 text-gray-400 dark:text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> -->
+                    <h3 class="mb-5 text-4xl font-normal text-white">Connect Wallet</h3>
+                    <hr>
+                    <div class="flex justify-between items-start mt-10">
+                      <a href="https://play.google.com/store/apps/details?id=com.metallicus.webauth" class="mr-4">
+                        <div>
+                          <img src="/assets/images/img-gplay.svg" alt="">
+                        </div>
+                      </a>
+                      <a href="https://apps.apple.com/us/app/webauth/id1594500069" class="ml-4">
+                        <div>
+                          <img src="/assets/images/img-appstore.svg" alt="">
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </div>
         <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden " aria-controls="navbar-sticky" aria-expanded="false">
           <span class="sr-only">Open main menu</span>
           <!-- <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg> -->
@@ -106,7 +135,7 @@
             </li>
           </ul>
           <a href="#" class="mt-8">
-            <button class="bg-gradient-to-r from-trendeGrade-100 to-trendeGrade-200 text-white py-2 px-6">
+            <button class="bg-gradient-to-r from-trendeGrade-100 to-trendeGrade-200 text-white py-2 px-6" type="button" data-modal-toggle="popup-modal">
               Create Wallet
             </button>
           </a>
