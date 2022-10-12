@@ -92,8 +92,8 @@
     background-position: center;
     background-size: cover;
   }
-  .box-wallet .lottie-loop{
-    /* max-width: 240px; */
+  .box-wallet .lottie-loop svg{
+    max-width: 240px;
   }
   .box-wallet .absolute{
     
