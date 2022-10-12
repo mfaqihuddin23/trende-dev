@@ -93,7 +93,7 @@
     background-size: cover;
   }
   .box-wallet .lottie-loop{
-    max-width: 240px;
+    /* max-width: 240px; */
   }
   .box-wallet .absolute{
     
@@ -133,8 +133,13 @@
   section.hero .lottie-loop{
     max-width: 470px;
   }
-  .box-wallet .lottie-loop{
-    max-width: 500px;
+  .box-wallet .lottie-loop svg{
+    max-width: 482px;
+    max-height: 430px;
+  }
+
+  section.loyalty p{
+    max-width: 769px;
   }
 }
 @media (min-width: 1280px) {  }
