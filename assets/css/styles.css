@@ -1173,6 +1173,14 @@ section.featured .rounded-3xl{
   margin-bottom: 2.5rem;
 }
 
+.mt-6{
+  margin-top: 1.5rem;
+}
+
+.mr-3{
+  margin-right: 0.75rem;
+}
+
 .mb-2{
   margin-bottom: 0.5rem;
 }
